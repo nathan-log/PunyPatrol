@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Puny Patrol",
+    "version": "1.0.0",
+    "description": "Detect non ASCII characters in URLs and display warning.",
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://mail.google.com/*"
+            ]
+        }
+    ]
+}
